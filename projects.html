@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets | Maelys Le Brun</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+    .icon-hover {
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .icon-hover:hover {
+      transform: scale(1.15);
+      filter: brightness(1.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-pink-600 text-white">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Maelys Le Brun</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:underline">Accueil</a></li>
+          <li><a href="projects.html" class="hover:underline">Projets</a></li>
+          <li><a href="skills.html" class="hover:underline">Compétences</a></li>
+          <li><a href="about.html" class="hover:underline">Stages</a></li>
+          <li><a href="veilletechnologique.html" class="hover:underline">Veille Technologique</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="projects" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10 text-pink-700">Mes Projets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <a href="https://github.com/Rayaneww/Projet-correcteur-automatique-d-erreurs" target="_blank">
+            <img src="qui-est-ce.jpg" alt="Projet 1" class="w-full rounded-lg mb-4">
+          </a>
+          <h3 class="text-xl font-bold mb-2 text-pink-600">Qui-est-ce</h3>
+          <p class="text-gray-700">Page web en HTML et PHP pour jouer à « Qui est-ce ? » avec identification d'erreurs et réponses oui/non.</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <a href="https://github.com/MaelysLeBrun/portfolio" target="_blank">
+            <img src="portfolio.png" alt="Projet 2" class="w-full rounded-lg mb-4">
+          </a>
+          <h3 class="text-xl font-bold mb-2 text-pink-600">E-Portfolio</h3>
+          <p class="text-gray-700">Création de mon propre portfolio en HTML, totalement personnalisé.</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <div class="w-full h-[300px] overflow-hidden rounded-lg mb-4">
+            <a href="https://github.com/Rayaneww/La-joueuse-de-tympanon-" target="_blank">
+              <img src="cnam.jpg" alt="Projet 3" class="object-cover w-full h-full">
+            </a>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-pink-600">Site du CNAM</h3>
+          <p class="text-gray-700">Page dédiée à notre visite du musée du CNAM sur le thème des automates.</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <div class="w-full h-[300px] overflow-hidden rounded-lg mb-4">
+            <a href="https://github.com/MaelysLeBrun/morpion" target="_blank">
+              <img src="morpion.png" alt="Projet 4" class="object-cover w-full h-full">
+            </a>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-pink-600">Morpion</h3>
+          <p class="text-gray-700">Petit jeu codé en HTML/CSS/JS qui m’a permis de découvrir de nombreuses fonctionnalités.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="flex justify-center my-10">
+    <a href="contact.html" class="bg-pink-600 px-6 py-3 rounded-lg text-white font-semibold hover:bg-pink-500 pulse">Me Contacter</a>
+  </div>
+
+  <a href="CV Maelys Le Brun.pdf" class="fixed bottom-4 right-4 bg-pink-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-pink-700 transition-all duration-300 font-bold">Mon CV !</a>
+
+  <footer class="bg-white text-center py-4">
+    <p class="text-pink-700">Retrouvez-moi sur :</p>
+    <a href="https://www.linkedin.com/in/maelys-le-brun" target="_blank">
+      <img src="linkedin.png" class="icon-hover" alt="LinkedIn" style="width: 50px; height: 50px; display: inline-block; margin: 10px;">
+    </a>
+    <a href="https://github.com/MaelysLeBrun" target="_blank">
+      <img src="github.png" class="icon-hover" alt="GitHub" style="width: 50px; height: 50px; display: inline-block; margin: 10px;">
+    </a>
+  </footer>
+
+  <footer class="bg-pink-900 text-white text-center py-4">
+    <p>© 2024 Maelys LE BRUN. Tous droits réservés.</p>
+    <a href="index.html" class="text-white hover:underline">Retour à l'accueil</a>
+  </footer>
+</body>
+</html>
