@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences | Maelys Le Brun</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+    .icon-hover {
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .icon-hover:hover {
+      transform: scale(1.15);
+      filter: brightness(1.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navigation -->
+  <header class="bg-pink-600 text-white">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Maelys Le Brun</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:underline">Accueil</a></li>
+          <li><a href="projects.html" class="hover:underline">Projets</a></li>
+          <li><a href="skills.html" class="hover:underline">Compétences</a></li>
+          <li><a href="about.html" class="hover:underline">Stages</a></li>
+          <li><a href="veilletechnologique.html" class="hover:underline">Veille Technologique</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <a href="CV Maelys Le Brun.pdf" class="fixed bottom-4 right-4 bg-pink-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-pink-700 transition-all duration-300 font-bold">Mon CV !</a>
+  <section id="skills" class="py-20 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-pink-700">Mes Compétences</h2>
+      <p class="text-lg mb-10">Voici un aperçu des compétences que j'ai développées au cours de mes études et de mes projets personnels.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-4 text-pink-600">Développement Web</h3>
+          <ul class="list-disc pl-5 text-left">
+            <li>HTML / CSS (responsive design, flexbox, grid)</li>
+            <li>JavaScript (DOM, événements, mini-jeux)</li>
+            <li>Frameworks : utilisation de Tailwind CSS</li>
+        </ul>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-4 text-pink-600">Base de données</h3>
+          <ul class="list-disc pl-5 text-left">
+            <li>MySQL (modélisation, requêtes, procédures)</li>
+            <li>SQL Server (relations, jointures, vues)</li>
+            <li>Utilisation avec PHP / Java (CRUD)</li>
+        </ul>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-4 text-pink-600">Langages de programmation</h3>
+          <ul class="list-disc pl-5 text-left">
+            <li>Java (POO, interface graphique, JDBC)</li>
+            <li>Python (scripts, sécurité, automatisation avec ZAP)</li>
+            <li>C / C++ (structures, logique algorithmique)</li>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-4 text-pink-600">Qualifications</h3>
+          <ul class="list-disc pl-5 text-left">
+            <li>MOOC de la CNIL</li>
+            <li>Pack Office (Excel avancé, PowerPoint, Word)</li>
+            <li>PIX (certification numérique)</li>
+            <li>Canva (création de visuels et CV design)</li>
+            <li>Wordpress (édition, personnalisation de thème)</li>
+        </ul>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-4 text-pink-600">Cybersécurité</h3>
+        <ul class="list-disc pl-5 text-left">
+            <li>Audit de sécurité (tests, recommandations)</li>
+            <li>VM Virtual Box (tests d'environnements isolés)</li>
+            <li>RGPD, conformité, AIPD, documentation CNIL</li>
+            <li>Outils : ZAP, BURP Suite, Excel RGPD</li>
+            <li>Méthodes OWASP et EBISO</li>
+        </ul>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold mb-4 text-pink-600">IDE</h3>
+          <ul class="list-disc pl-5 text-left">
+            <li>Visual Studio Code (HTML/CSS/JS, extensions)</li>
+            <li>Eclipse (Java, POO, base de données)</li>
+            <li>Expérience avec Git et GitHub</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="flex justify-center my-10">
+    <a href="contact.html" class="bg-pink-600 px-6 py-3 rounded-lg text-white font-semibold hover:bg-pink-500 pulse">Me Contacter</a>
+  </div>
+
+  <footer class="bg-white text-center py-4">
+    <p class="text-pink-700">Retrouvez-moi sur :</p>
+    <a href="https://www.linkedin.com/in/maelys-le-brun/" target="_blank">
+      <img src="linkedin.png" class="icon-hover" alt="LinkedIn" style="width: 50px; height: 50px; display: inline-block; margin: 10px;">
+    </a>
+    <a href="https://github.com/MaelysLeBrun" target="_blank">
+      <img src="github.png" class="icon-hover" alt="GitHub" style="width: 50px; height: 50px; display: inline-block; margin: 10px;">
+    </a>
+  </footer>
+
+  <footer class="bg-pink-900 text-white text-center py-4">
+    <p>© 2024 Maelys LE BRUN. Tous droits réservés.</p>
+    <a href="index.html" class="text-white hover:underline">Retour à l'accueil</a>
+  </footer>
+</body>
+</html>

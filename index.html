@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maelys Le Brun - E-Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      0%, 100% { border-color: transparent }
+      50% { border-color: white }
+    }
+    .animate-typing {
+      animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 4px solid white;
+      width: 100%;
+    }
+    .icon-hover {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .icon-hover:hover {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+  }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <header class="bg-pink-700 text-white py-4 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Maelys Le Brun</h1>
+      <nav class="space-x-6 hidden sm:block">
+        <a href="projects.html" class="hover:underline">Projets</a>
+        <a href="skills.html" class="hover:underline">Compétences</a>
+        <a href="projects.html" class="hover:underline">Stages</a>
+        <a href="veilletechnologique.html" class="hover:underline">Veille Technologique</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-pink-800 text-white py-20 text-center px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6 animate-typing">Bienvenue sur mon e-portfolio</h2>
+      <p class="mb-4 leading-relaxed">Je suis Maelys Le Brun, apprentie développeuse passionnée par le codage et les nouvelles technologies.</p>
+      <p class="mb-4">Étudiante en BTS SIO option SLAM, je suis passionnée par le développement et les nouvelles technologies. J'aime créer des projets innovants et relever des défis techniques.</p>
+      <p class="mb-4">Déterminée, sérieuse, autonome et consciente du travail qui m'attend, je suis persuadée que je serai un élément moteur au sein de votre entreprise !</p>
+      <p class="mb-4">J'habite à Claye-Souilly et j'y ai fait toute ma scolarité, jusqu'à l'obtention de mon brevet, avec la mention Bien, au collège Parc des Tourelles !</p>
+      <p class="mb-4">Après ça, j'ai continué ma scolarité au lycée Honoré de Balzac à Mitry-Mory où j'ai obtenu mon bac avec la mention Bien également, en filière technologique et plus particulièrement en STMG-Sig !</p>
+      <p class="mb-8">Désormais, j'entame ma deuxième année de BTS SIO au lycée René Descartes à Champs-sur-Marne, je m'y plais et j’aime apprendre plein de nouvelles compétences chaque jour.</p>
+      <a href="contact.html" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-block">Me Contacter</a>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-pink-700 mb-12">Activité RGPD / DPO Freelance</h2>
+      <p class="text-center max-w-2xl mx-auto text-gray-700 mb-10">En parallèle de mes études en informatique, je développe une activité en tant que <strong>DPO freelance</strong>, spécialisée dans la protection des données personnelles et la conformité au RGPD.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold text-pink-700 mb-4">Services proposés</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Audit de conformité RGPD</li>
+            <li>Rédaction de politiques de confidentialité</li>
+            <li>Sensibilisation à la protection des données</li>
+            <li>Déléguée à la protection des données externalisée (DPO)</li>
+          </ul>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <h3 class="text-xl font-semibold text-pink-700 mb-4">Certifications & outils</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>SecNumAcadémie (ANSSI)</li>
+            <li>Préparation CIPP/C (IAPP)</li>
+            <li>ISO/IEC 27001 Lead Implementer (en cours)</li>
+            <li>Outils : CNIL, IAPP, Excel RGPD, modèles AIPD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="contact.html" class="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300">Me contacter pour une mission</a>
+      </div>
+    </div>
+  </section>
+<a href="CV Maelys Le Brun.pdf" class="fixed bottom-4 right-4 bg-pink-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-pink-700 transition-all duration-300 font-bold">Mon CV !</a>
+<footer class="bg-white-900 text-pink text-center py-4" style="text-align: center;">
+        <p>Retrouvez moi sur :</p>
+        <a href="https://www.linkedin.com/in/maelys-le-brun/" target="_blank">
+          <img src="linkedin.png" class="icon-hover" alt="LinkedIn" style="width: 50px; height: 50px; display: inline-block; margin-top: 10px;">
+        </a>
+        <a href="https://github.com/MaelysLeBrun" target="_blank">
+          <img src="github.png" class="icon-hover" alt="GitHub" style="width: 50px; height: 50px; display: inline-block; margin-top: 10px;">
+        </a>
+    </footer> 
+    <footer class="bg-pink-900 text-white text-center py-4">
+        <p>© 2024 Maelys LE BRUN. Tous droits réservés.</p>
+        <a href="index.html" class="text-white hover:underline">Retour à l'accueil</a>
+    </footer>
+</body>
+</html>

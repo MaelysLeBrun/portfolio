@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | Maelys Le Brun</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+</style>
+<style>
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+</style>
+<style>
+.icon-hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+</style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <header class="bg-pink-600 text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Maelys Le Brun</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline">Accueil</a></li>
+                    <li><a href="projects.html" class="hover:underline">Projets</a></li>
+                    <li><a href="skills.html" class="hover:underline">Compétences</a></li>
+                    <li><a href="about.html" class="hover:underline">Stages</a></li>
+                    <li><a href="veilletechnologique.html" class="hover:underline">Veille Technologique</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <section id="hero" class="bg-pink-900 text-white text-center py-20">
+        <div class="container mx-auto">
+            <br>
+            <h2 class="text-5xl font-bold mb-6 text-gradient typing-effect">L’évolution du droit du numérique face aux innovations technologiques : enjeux, défis et perspectives</h2>
+            <p class="text-xl mb-6 fade-in">Les évolutions technologiques bouleversent notre société à une vitesse sans précédent : intelligence artificielle, big data, objets connectés, plateformes numériques… Face à ces transformations, le droit du numérique doit sans cesse s’adapter pour encadrer les usages, protéger les citoyens et garantir l’éthique.</p>
+            <p class="text-xl mb-6 fade-in">Cette veille technologique a pour objectif de suivre l’évolution du droit du numérique en lien avec les innovations technologiques récentes. Elle mettra en lumière les enjeux juridiques majeurs, les nouveaux textes législatifs, les débats éthiques, ainsi que les impacts sur les professionnels du développement et de la cybersécurité.</p>
+            </br>
+        </div>
+        <div class="flex justify-center">
+        <a href="contact.html" class="bg-pink-600 px-6 py-3 rounded-lg text-white font-semibold hover:bg-pink-500 pulse">Me Contacter</a>
+        </div>
+    </section>
+    <a href="CV Maelys Le Brun.pdf" class="fixed bottom-4 right-4 bg-pink-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-pink-700 transition-all duration-300 font-bold">Mon CV !</a>
+<footer class="bg-white-900 text-pink text-center py-4" style="text-align: center;">
+    <p>Retrouvez moi sur :</p>
+    <a href="https://www.linkedin.com/in/maelys-le-brun/" target="_blank">
+      <img src="linkedin.png" class="icon-hover" alt="LinkedIn" style="width: 50px; height: 50px; display: inline-block; margin-top: 10px;">
+    </a>
+    <a href="https://github.com/MaelysLeBrun" target="_blank">
+      <img src="github.png" class="icon-hover" alt="GitHub" style="width: 50px; height: 50px; display: inline-block; margin-top: 10px;">
+    </a>
+</footer> 
+    <footer class="bg-pink-900 text-white text-center py-4">
+        <p>© 2024 Maelys LE BRUN. Tous droits réservés.</p>
+        <a href="index.html" class="text-white hover:underline">Retour à l'accueil</a>
+    </footer>
+</body>
+</html>
